@@ -17,7 +17,7 @@ export default async function AdminDashboardPage() {
     const stats = [
         {
             label: "Receita Total",
-            value: formatPrice(totalRevenue._sum.total || 0),
+            value: formatPrice(Number(totalRevenue._sum.total || 0)),
             icon: DollarSign,
             color: "text-green-600",
             bg: "bg-green-50"
